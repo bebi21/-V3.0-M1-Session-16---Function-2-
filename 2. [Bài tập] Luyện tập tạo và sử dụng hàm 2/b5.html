@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất. -->
+    <script>
+      let number = prompt("nhap  vao  so nguyen cach  nhau  bang  dau phay");
+      let a = number.split(",");
+      function soNhoNhat(a) {
+        let min = a[0];
+        for (let i = 0; i < a.length; i++) {
+          if (min > a[i]) {
+            min = a[i];
+          }
+        }
+        console.log(min);
+      }
+      soNhoNhat(a);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó. -->
+    <script>
+      let number = prompt("nhap  vao  2 so  nguyen cach nhau bang  dau  phay");
+      let a = number.split(",");
+      function doicho(x) {
+        let result;
+        result = x[0];
+        x[0] = x[1];
+        x[1] = result;
+        console.log(a);
+      }
+      doicho(a);
+    </script>
+  </body>
+</html>

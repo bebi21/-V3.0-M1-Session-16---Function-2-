@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 5: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ 2 số nguyên đó -->
+    <script>
+      let a = +prompt("nhap vao  a");
+      let b = +prompt("nhap vao b");
+
+      function doicho(a, b) {
+        let resuil;
+        resuil = a;
+        a = b;
+        b = resuil;
+        console.log(a);
+        console.log(b);
+      }
+      doicho(a, b);
+    </script>
+  </body>
+</html>

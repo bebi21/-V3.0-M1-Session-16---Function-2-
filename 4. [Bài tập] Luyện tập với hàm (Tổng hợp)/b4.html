@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--
+
+         indexOf(..) kiểm tra xem phần từ đã có trong mảng hay  chưa  nếu đã có trả về -1
+         nếu có trả về số phần tử
+         
+      function kt(arr) {
+        var newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (newArr.indexOf(arr[i]) === -1) {
+            newArr.push(arr[i]);
+          }
+        }
+        return newArr;
+      }
+      console.log(kt([1, 2, 3, 1, 1, 1, 2, 3, 45]));
+      -->
+  </head>
+  <body>
+    <script>
+      let number = prompt("moi nguoi  dung nhap  vao");
+      let a = number.split("");
+
+      let newArr = [];
+      for (let i = 0; i < a.length; i++) {
+        if (newArr.indexOf(a[i]) == -1) {
+          newArr.push(a[i]);
+        }
+      }
+      console.log(newArr);
+      function kt(a, b) {
+        let count;
+        for (let i = 0; i < b.length; i++) {
+          count = 0;
+          for (let j = 0; j < a.length; j++) {
+            if (b[i] == a[j]) {
+              count++;
+            }
+          }
+          console.log(`ki tu ${b[i]} lap lai ${count} lan`);
+        }
+      }
+      kt(a, newArr);
+    </script>
+  </body>
+</html>

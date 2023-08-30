@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 7: Viết chương trình tạo hàm để kiểm tra xem năm người dùng nhập vào có phải năm nhuận không -->
+    <script>
+      let years = +prompt("nhap so nam:");
+      function namNhuan(nam) {
+        if (nam % 4 === 0) {
+          if (nam % 100 !== 0 || nam % 400 === 0) {
+            return true;
+          } else {
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+
+      if (namNhuan(years)) {
+        console.log(`${years} la nam  nhuan `);
+      } else {
+        console.log(`${years} ko  la nam nhuan`);
+      }
+    </script>
+  </body>
+</html>

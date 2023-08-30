@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function timSoBeNhat(mang) {
+        let soNhoNhat = mang[0];
+
+        for (let i = 1; i < mang.length; i++) {
+          if (mang[i] < soNhoNhat) {
+            soNhoNhat = mang[i];
+          }
+        }
+        return soNhoNhat;
+      }
+
+      let a = prompt("nhap vao  1 mang");
+      let mangSoNguyen = a.split(",");
+      let soBeNhat = timSoBeNhat(mangSoNguyen);
+      console.log("Số bé nhất trong mảng là:", soBeNhat);
+    </script>
+  </body>
+</html>
